@@ -9,24 +9,30 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Mina' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Mina|Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Mina|Open+Sans' rel='stylesheet' type='text/css'> -->
     <style>
-        body {
-       background-image: url(https://image.shutterstock.com/z/stock-photo-shining-yellow-oilseed-rape-fields-in-a-black-and-white-landscape-135354116.jpg);}
-          
+            body{
+                background-image: url("Assets/Images/stock-photo-shining-yellow-oilseed-rape-fields-in-a-black-and-white-landscape-200531939.jpg")
+            }
     </style>
 </head>
 <body>
+        <a href="#about">
     <div class="triangle">
-        <h3 style=color:white>ABOUT GLENN</h3>
+        <!-- <a href="#about"> -->
+            <h3 style=color:white> ABOUT GLENN</h3>
+        <!-- </a> -->
     </div>
+    </a>
+    <a href="#projects">
     <div class="triangle2">      
         <h3 align=right style=color:white>GLENN'S PROJECTS</h3>
-    </div>
+    </div></a>
       
     <section class="sec1">
           <img class="logo" src="Assets/Images/Glenn.svg" alt="Glenn logo"; margin: 200px; >
     </section>  
+    <a name="about">
     <div class=firstbreak>
     </div>
    
@@ -37,7 +43,7 @@
                 ABOUT GLENN
             <hr />
         </h1>
-    </div>
+    </div></a>
     <div class="about-text">
         <p id=first-paragraph>
             Glenn has worked in a few different areas in the past but has always had an interest in the latest technology and new ideas. In 2018 Glenn began a bootcamp to learn all he could about coding. So far he has built a terminal app and this website, with much more to come.
@@ -62,7 +68,29 @@
         </h1>
     </div>
     <div class="contact-form">
+        <form name="contact" method="POST" netlify data-netlify="true">
+            <p>
+                <label>Your Name: <input type="text" name="name"></label>   
+            </p>
+            <p>
+                <label>Your Email:  <input type="email" name="email"></label>
+            </p>
+            <p>
+                <label>Message:    <textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
 
+        </form>          
+    </div>
+    <div>
+        <h1 class="social-badges">
+            <a href="https://github.com/waltandmartha"><i class="fa fa-github-square"></i></a>  
+            <a href="https://codepen.io/waltandmartha"><i class="fa fa-codepen"></i></a>  
+            <a href=" "><i class="fa fa-linkedin-square"></i></a>  
+            <a href=" "><i class="fa fa-twitter-square"></i></a>
+        </h1>
     </div>
     <!--contact form to go here-->
     <div class="title-clearfix-flipped">
@@ -73,7 +101,7 @@
         </h1>
     </div>
 </section>
-
+<a name="projects">
 <div class="secondbreak"> 
 </div>
 <section class="projects">
@@ -103,9 +131,10 @@
         </p>  
       
         <h2 class="projects-text-header"><i class="fa fa-mobile"></i>  <i class="fa fa-desktop"></i> Personal Website</h2>
-        <p class="projects-text"> 
+        <p class="project-text1"> 
             Using html and css, this website was designed, created and deployed in less than a week. 
         </p>
+        <h2 class="projects-text-header">More to come...</h2>
     </div>
 </section>
 <div class="end">
