@@ -225,7 +225,7 @@ button:hover {
   color: #eb7235;
 }
 
-.fa-linkedin-square {
+.fa-linkedin {
   color: #eb7235;
 }
 
@@ -236,7 +236,7 @@ button:hover {
   color: #fbe976;
 }
 
-.fa-linkedin-square:hover {
+.fa-linkedin:hover {
   color: #fbe976;
 }
 
@@ -286,7 +286,7 @@ button:hover {
     background: #eb7235;
     position: relative;
     z-index: 100;
-  }
+}
   
   .secondbreak:before {
     content: '';
@@ -317,6 +317,7 @@ button:hover {
     font-family: Mina;
     font-size: 28px;
     margin-left: 200px; 
+    margin-right: 700px;
     color: darkslategrey;
     /* overflow: auto; */
   }
@@ -325,7 +326,7 @@ button:hover {
   font-family: Mina;
   font-size: 28px;
   margin-left: 200px; /* need media query so this disappears on mobile */
-  padding-right: 500px;
+  padding-right: 400px;
   color: darkslategrey;
   position: relative;
   z-index: 7;
@@ -410,16 +411,32 @@ h2 {
 
   .projects-text {
     margin-left: 10px;
+    padding-left: 10px;
+    position: relative; 
+    background-color: white;
+    overflow: auto;
+    flex-wrap: wrap;
+  }
 
+  .project-text1 {
+    margin-left: 10px;
+    padding-left: 10px;
+    position: relative; 
+    background-color: white;
+    overflow: auto;
   }
 
   /* added 27March */
   .sec1 {
-      background-size: auto 100%;
-    }
+    background-size: auto 100%;
+  }
+
+  .projects-text-header {
+    margin-left: 10px;
+  }
 }
 
-.term-app-image {
+.image {
   height: 400px;
   /* display: inline-block; */
   float: right;
